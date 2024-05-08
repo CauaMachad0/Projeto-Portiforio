@@ -1,0 +1,96 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de Navegação */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Boas-Vindas */
+.welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.welcome-section h1 {
+    font-size: 3em;
+}
+
+/* Seção de Projetos */
+.projects-section {
+    padding: 50px 20px;
+}
+
+.project-tile {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-tile h2 {
+    font-size: 1.5em;
+}
+
+.project-tile p {
+    margin-top: 10px;
+}
+
+.project-tile a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-tile a:hover {
+    background-color: #555;
+}
+
+/* Consulta de Mídia */
+@media only screen and (max-width: 768px) {
+    /* Estilos específicos para dispositivos móveis */
+    #navbar ul {
+        display: block;
+        text-align: center;
+    }
+
+    #navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
