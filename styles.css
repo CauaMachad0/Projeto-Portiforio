@@ -3,6 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(./img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+body.scroll-down header {
+    opacity: 0;
 }
 
 /* Barra de Navegação */
@@ -10,7 +16,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-image: url(./img/fundo-barra-navegacao.png);
+    background-size: cover;
+    background-position: center;
     padding: 10px 0;
 }
 
@@ -29,10 +37,12 @@ body {
 #navbar ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 #navbar ul li a:hover {
     text-decoration: underline;
+    color: #ffc107;
 }
 
 /* Seção de Boas-Vindas */
@@ -42,11 +52,17 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #f2f2f2;
+    background-image: url(./img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease; 
+    z-index: 999;
 }
 
 .welcome-section h1 {
     font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
 }
 
 /* Seção de Projetos */
@@ -55,16 +71,22 @@ body {
 }
 
 .project-tile {
-    background-color: #f9f9f9;
+    background-image: url(./img/fundo-projetos.png);
+    background-size: 100%;
+    background-position: center;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .project-tile h2 {
     font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
 }
 
 .project-tile p {
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
     margin-top: 10px;
 }
 
@@ -81,16 +103,18 @@ body {
     background-color: #555;
 }
 
-/* Consulta de Mídia */
-@media only screen and (max-width: 768px) {
-    /* Estilos específicos para dispositivos móveis */
-    #navbar ul {
-        display: block;
-        text-align: center;
-    }
-
-    #navbar ul li {
+#navbar ul li {
         display: block;
         margin: 10px 0;
     }
+
+.profile-links{
+    display: inline-block;
+    font-size: 12px;
+    width: 5%;
+   
+}
+
+.img-link {
+    width: 200%;
 }
